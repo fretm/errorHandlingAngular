@@ -12,7 +12,7 @@ export class UserService {
 
 
 
-  private apiUrl = 'https://localhost:8080/api/users';
+  private apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
 
 
 
@@ -20,7 +20,7 @@ export class UserService {
  
  
  
-  getUsers(): Observable<any> {
+  gettodo  (): Observable<any> {
  
     return this.http.get<any>(this.apiUrl)
  
