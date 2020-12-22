@@ -6,14 +6,26 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { TestpracticeComponent } from './testpractice/testpractice.component';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    TestpracticeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule  
+    HttpClientModule  ,
+ 
+    RouterModule.forRoot([{path:"" ,component :HomeComponent},
+  
+  {path:"feature", loadChildren:()=> import("./feature/feature.module").then(m=>m.FeatureModule)}
+  ])
   ],
   providers: [
     {

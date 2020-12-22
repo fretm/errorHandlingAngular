@@ -1,0 +1,9 @@
+<button (click)="showob()">show my Observable</button>
+<p *ngFor="let item of fre">{{ item }}</p>
+<hr />
+<p *ngFor="let item of bk">{{ item }}</p>
+
+
+<a [routerLink]="[ 'feature','sub1']"> sub1</a>
+<a [routerLink]="[ 'feature','sub2']">sub2</a>
+<router-outlet></router-outlet>
