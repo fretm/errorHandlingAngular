@@ -6,12 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testpractice.component.css']
 })
 export class TestpracticeComponent implements OnInit {
-
-  constructor() { }
+count:number ;
+  constructor() {
+this.count=0
+   }
 
   ngOnInit(): void {
   }
+increment(){
 
+  this.count++
+}
 
   safedrive (num ,num2){
 
