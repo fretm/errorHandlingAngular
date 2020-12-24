@@ -42,4 +42,18 @@ export class UserService {
     )
   }
 
+
+
+authenticate(){
+
+  localStorage.setItem("user","fre")
+
+}
+
+checkauthentication(){
+  return (localStorage.getItem("user") === "fre")
+}
+
+
+
 }

@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TestpracticeComponent } from './testpractice/testpractice.component';
+import { CustomerResevationComponent } from './customer-resevation/customer-resevation.component';
+import { EmployeComponent } from './employe/employe.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TestpracticeComponent
+    TestpracticeComponent,
+    CustomerResevationComponent,
+    EmployeComponent
   ],
   imports: [
     BrowserModule,

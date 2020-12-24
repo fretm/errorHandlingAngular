@@ -1,1 +1,5 @@
 [1222/162639.199:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1223/105807.670:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1223/141845.130:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1223/163125.000:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\16177\AppData\Local\Temp\karma-54992280\Crashpad\attachments\360970ab-d54d-492b-b497-3a313da49dd6: The system cannot find the path specified. (0x3)
+[1223/163125.067:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: An attempt was made to access an exiting process. (0xc000010a)

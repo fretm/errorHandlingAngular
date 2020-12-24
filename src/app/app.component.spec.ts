@@ -1,8 +1,10 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-
+import {UserService} from './user.service'
 describe('AppComponent', () => {
+  let authservice :UserService;
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
@@ -11,6 +13,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers:[UserService]
     }).compileComponents();
   }));
 
@@ -20,7 +23,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  xit(`should have as title 'errorHandling'`, () => {
+ xit(`should have as title 'errorHandling'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('errorHandling');
